@@ -1,0 +1,9 @@
+<div class="app">
+  @if (store.loading()) {
+  <mat-spinner /> }
+
+  <!-- Render child only when data is loaded -->
+  @if (store.loaded()) {
+  <app-todo-list />
+  }
+</div>
